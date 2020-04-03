@@ -271,14 +271,16 @@
 		});
 
 		function GetLocation(){
-				var e1 = document.getElementById("json-one");
-				var r1 = e1.options[e1.selectedIndex].text;
-				var e2 = document.getElementById("json-two");
-				var r2 = e2.options[e2.selectedIndex].text;
-				var result = badges[r1][r2].replace(/\n/g,"<br>")
+			
+			var e1 = document.getElementById("json-one");
+			var r1 = e1.options[e1.selectedIndex].text;
+			var e2 = document.getElementById("json-two");
+			var r2 = e2.options[e2.selectedIndex].text;
+			var result = badges[r1][r2].replace(/\n/g,"<br>")
 			
 			document.getElementById("result").innerHTML = result;
 		}
+
 	</script>
 </head>
 
@@ -300,6 +302,8 @@
 		<br />
 	
 		<select id="json-two" style="min-height:30px;">
+			<option>배지 이름 선택</option>
+		</select>
 
 			<br>
 		<br>
